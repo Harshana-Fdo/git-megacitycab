@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Logout Servlet -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Booking Servlet -->
+    <servlet>
+        <servlet-name>BookingServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.BookingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookingServlet</servlet-name>
+        <url-pattern>/BookingServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Payment Servlet -->
+    <servlet>
+        <servlet-name>PaymentServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.PaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PaymentServlet</servlet-name>
+        <url-pattern>/PaymentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ReceiptServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.ReceiptServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReceiptServlet</servlet-name>
+        <url-pattern>/ReceiptServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminVehicleServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.AdminVehicleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminVehicleServlet</servlet-name>
+        <url-pattern>/AdminVehicleServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminBookingServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.AdminBookingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminBookingServlet</servlet-name>
+        <url-pattern>/AdminBookingServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminPaymentServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.AdminPaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminPaymentServlet</servlet-name>
+        <url-pattern>/AdminPaymentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminUserServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.AdminUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminUserServlet</servlet-name>
+        <url-pattern>/AdminUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookingHistoryServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.BookingHistoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookingHistoryServlet</servlet-name>
+        <url-pattern>/BookingHistoryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CustomerDashboardServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.CustomerDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerDashboardServlet</servlet-name>
+        <url-pattern>/CustomerDashboardServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CustomerBookingServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.CustomerBookingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerBookingServlet</servlet-name>
+        <url-pattern>/CustomerBookingServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ConfirmPaymentServlet</servlet-name>
+        <servlet-class>com.example.megacitycab.controller.ConfirmPaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConfirmPaymentServlet</servlet-name>
+        <url-pattern>/ConfirmPaymentServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
