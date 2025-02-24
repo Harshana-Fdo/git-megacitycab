@@ -48,6 +48,7 @@ public class UserDAO {
                 return UserFactory.createUser(
                         rs.getInt("user_id"),
                         rs.getString("username"),
+                        rs.getString("password"),
                         rs.getString("email"),
                         rs.getString("phone"),
                         rs.getString("full_name"),
@@ -164,6 +165,34 @@ public class UserDAO {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public User getUserbyusername(String username) {
+
+        try {
+            String sql = "SELECT * FROM users WHERE username = ? ";
+            PreparedStatement ps = conn.prepareStatement(sql);
+
+            ps.setString(1, username);
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                System.out.println("database: " +rs.getString("password"));
+                return UserFactory.createUser(
+                        rs.getInt("user_id"),
+                        rs.getString("username"),
+                        rs.getString("password"),
+                        rs.getString("email"),
+                        rs.getString("phone"),
+                        rs.getString("full_name"),
+                        rs.getString("role"),
+                        rs.getString("status")
+                );
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
 

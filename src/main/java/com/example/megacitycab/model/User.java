@@ -13,6 +13,17 @@ public class User {
     public User() {}
 
 
+    public User(int userId, String username,String password, String email, String phone, String fullName, String role, String status) {
+        this.userId = userId;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.phone = phone;
+        this.fullName = fullName;
+        this.role = role;
+        this.status = status;
+    }
+
     public User(int userId, String username, String email, String phone, String fullName, String role, String status) {
         this.userId = userId;
         this.username = username;
@@ -22,7 +33,6 @@ public class User {
         this.role = role;
         this.status = status;
     }
-
 
     // Getters and Setters
     public int getUserId() { return userId; }
