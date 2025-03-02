@@ -13,8 +13,13 @@ public class AuthServiceTest {
 
        AuthService authService = new AuthService();
 
-       assertNotEquals(null,
-               authService.login("rasindu","rrrr"));
+       assertNotEquals(null, authService.login("rasindu","rrrr"));
 
+    }
+
+    @Test
+    public void testInvalidLogin() {
+        AuthService authService = new AuthService();
+        assertNull(authService.login("wrongUser", "wrongPass"));
     }
 }

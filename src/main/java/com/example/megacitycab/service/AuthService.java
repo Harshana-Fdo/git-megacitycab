@@ -16,15 +16,15 @@ public class AuthService {
     public User login(String username, String password) {
 
         User user = userDAO.getUserbyusername(username);
-        System.out.println(user.getRole());
-        System.out.println(user.getUserId());
 
-        if(PasswordUtil.checkPassword(password, user.getPassword())) {
-            user.setPassword(null);
-            return user;
+        if(user!=null){
+            if(PasswordUtil.checkPassword(password, user.getPassword())) {
+                user.setPassword(null);
+                return user;
+            }
         }
-        else
-            return null;
+        return null;
+
     }
 
 
