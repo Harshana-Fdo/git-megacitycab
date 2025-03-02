@@ -57,6 +57,9 @@ public class BookingService {
         return bookingDAO.getBookingById(bookingId);
     }
     public int createBooking(int userId, int vehicleId, String pickupLocation, String dropoffLocation, double distance) {
+        if (userId <= 0 || vehicleId <= 0 || pickupLocation.isEmpty() || dropoffLocation.isEmpty() || distance <= 0) {
+            return 0; // Indicate failure
+        }
         return bookingDAO.insertBooking(userId, vehicleId, pickupLocation, dropoffLocation, distance);
     }
     public Booking getBookingDetails(int bookingId) {
