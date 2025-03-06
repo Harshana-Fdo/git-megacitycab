@@ -43,7 +43,9 @@ public class BookingService {
 
 
     public boolean confirmBooking(int bookingId) {
+
         return bookingDAO.updateBookingStatus(bookingId, "CONFIRMED");
+
     }
     public List<Vehicle> getAvailableVehicles() {
         return vehicleDAO.getAvailableVehicles();
@@ -51,6 +53,7 @@ public class BookingService {
 
 
     public List<Booking> getBookingsByUser(int userId) {
+
         return bookingDAO.getBookingsByUser(userId);
     }
     public Booking getBookingById(int bookingId) {

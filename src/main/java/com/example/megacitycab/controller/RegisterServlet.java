@@ -29,7 +29,6 @@ public class RegisterServlet extends HttpServlet {
         String password = (request.getParameter("password"));
 
         User newUser = UserFactory.createUser(0, username,password, email, phone, fullName, "CUSTOMER", "ACTIVE");
-
         if (authService.registerUser(newUser)) {
             response.sendRedirect("login.jsp?success=registered");
         } else {
