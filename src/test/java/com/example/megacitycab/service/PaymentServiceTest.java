@@ -36,4 +36,24 @@ import static org.junit.jupiter.api.Assertions.*;
 
          assertTrue(result, "Expected payment processing to succeed for valid booking ID");
      }
+     @Test
+     public void testGetTotalEarnings() {
+
+         PaymentService paymentService = new PaymentService();
+         double totalEarnings = paymentService.getTotalEarnings();
+         assertTrue(totalEarnings >= 0, "Total earnings should be a non-negative value");
+     }
+
+     @Test
+     public void testGetEarningsByDateRange() {
+         PaymentService paymentService = new PaymentService();
+
+         String startDate = "2025-02-09";
+         String endDate = "2025-03-10";
+
+
+         double earnings = paymentService.getEarningsByDateRange(startDate, endDate);
+
+         assertTrue(earnings >= 0, "Earnings within the date range should be a non-negative value");
+     }
 }
