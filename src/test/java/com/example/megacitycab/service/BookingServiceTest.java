@@ -27,4 +27,13 @@ class BookingServiceTest {
 
         assertTrue(result > 0);
     }
+    @Test
+    public void testUpdateBookingStatus() {
+        BookingService bookingService = new BookingService();
+
+
+        boolean result = bookingService.updateBookingStatus(9, "CONFIRMED");
+
+        assertTrue(result, "Expected booking status update to succeed, but it failed.");
+    }
 }
