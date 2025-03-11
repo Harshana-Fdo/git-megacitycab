@@ -70,5 +70,8 @@
     %>
 
 </table>
+<form action="admin_dashboard.jsp" method="get">
+    <button type="submit" class="back-dashboard">⬅️ Back to Dashboard</button>
+</form>
 </body>
 </html>

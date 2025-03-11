@@ -42,7 +42,7 @@
             <% List<Vehicle> vehicles = (List<Vehicle>) request.getAttribute("vehicles");
                 if (vehicles != null && !vehicles.isEmpty()) {
                     for (Vehicle v : vehicles) { %>
-            <option value="<%= v.getVehicleId() %>"><%= v.getModel() %> - <%= v.getVehicleNumber() %></option>
+            <option value="<%= v.getVehicleId() %>"><%= v.getModel() %> - <%= v.getVehicleNumber() %> - <%= v.getDriverName() %></option>
             <%   } } else { %>
             <option value="">No available vehicles</option>
             <% } %>
