@@ -29,9 +29,6 @@ public class RegisterServlet extends HttpServlet {
         String password = request.getParameter("password");
         String role = request.getParameter("role"); // Get Role (ADMIN or CUSTOMER)
 
-<<<<<<< HEAD
-        User newUser = UserFactory.createUser(0, username,password, email, phone, fullName, "CUSTOMER", "ACTIVE");
-=======
         if (role == null || (!role.equals("CUSTOMER") && !role.equals("ADMIN"))) {
             response.sendRedirect("register.jsp?error=Invalid role");
             return;
@@ -39,7 +36,6 @@ public class RegisterServlet extends HttpServlet {
 
         User newUser = UserFactory.createUser(0, username, password, email, phone, fullName, role, "ACTIVE");
 
->>>>>>> main
         if (authService.registerUser(newUser)) {
             if (role.equals("ADMIN")) {
                 response.sendRedirect("admin_dashboard.jsp?success=admin_registered");
