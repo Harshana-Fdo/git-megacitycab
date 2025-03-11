@@ -50,5 +50,9 @@
     %>
 </table>
 
-<h3>Total Earnings: $<%= request.getAttribute("totalEarnings") != null ? request.getAttribute("totalEarnings") : "0.00" %></h3></body>
+<h3>Total Earnings: $<%= request.getAttribute("totalEarnings") != null ? request.getAttribute("totalEarnings") : "0.00" %></h3>
+<form action="admin_dashboard.jsp" method="get">
+    <button type="submit" class="back-dashboard">⬅️ Back to Dashboard</button>
+</form>
+</body>
 </html>
