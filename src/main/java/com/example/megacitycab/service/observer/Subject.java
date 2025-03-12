@@ -1,4 +1,4 @@
-package com.example.megacitycab.observer;
+package com.example.megacitycab.service.observer;
 
 import java.util.ArrayList;
 import java.util.List;

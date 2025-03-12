@@ -1,21 +1,14 @@
 package com.example.megacitycab.controller;
 
-import com.example.megacitycab.dao.DatabaseConnection;
-import com.example.megacitycab.dao.UserDAO;
-import com.example.megacitycab.factory.UserFactory;
+import com.example.megacitycab.service.factory.UserFactory;
 import com.example.megacitycab.model.User;
 import com.example.megacitycab.service.AuthService;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 
 
 public class RegisterServlet extends HttpServlet {

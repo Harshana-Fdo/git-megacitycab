@@ -1,4 +1,4 @@
-package com.example.megacitycab.observer;
+package com.example.megacitycab.service.observer;
 
 public class SMSNotification implements Observer{
 

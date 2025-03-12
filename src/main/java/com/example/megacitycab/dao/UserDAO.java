@@ -1,6 +1,6 @@
 package com.example.megacitycab.dao;
 
-import com.example.megacitycab.factory.UserFactory;
+import com.example.megacitycab.service.factory.UserFactory;
 import com.example.megacitycab.model.User;
 
 import java.sql.Connection;
