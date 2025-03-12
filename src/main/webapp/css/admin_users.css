@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 🔹 Page Title */
+h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    font-size: 14px;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* 🔹 Alternate Row Color */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* 🔹 Status Styling */
+.status-active {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.status-inactive {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* 🔹 Form Styling */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+/* 🔹 Form Inputs */
+input[type="text"],
+input[type="email"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 140px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* 🔹 Buttons */
+button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+/* 🔹 Update Button */
+.update-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.update-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 🔹 Deactivate Button */
+.deactivate-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.deactivate-btn:hover {
+    background-color: #c82333;
+}
+
+/* 🔹 Action Buttons Layout */
+.action-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}

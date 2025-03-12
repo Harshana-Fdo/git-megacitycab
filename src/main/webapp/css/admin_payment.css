@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 🔹 Page Title */
+h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Forms for Filtering */
+form {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+input[type="date"] {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+/* 🔹 Filter Button */
+button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 🔹 Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* 🔹 Payment Amount Styling */
+td:nth-child(3) { /* Amount Column */
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* 🔹 Payment Method */
+td:nth-child(4) { /* Payment Method Column */
+    font-weight: bold;
+}
+
+/* 🔹 Total Earnings */
+h3 {
+    background: white;
+    color: #333;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
