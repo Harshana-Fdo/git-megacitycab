@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Admin Registration</title>
-    <link rel="stylesheet" type="text/css" href="css/admin_register.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
 </head>
 <body>
 <div class="registration-container">
