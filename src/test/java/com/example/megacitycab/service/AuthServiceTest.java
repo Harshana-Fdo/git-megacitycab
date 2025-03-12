@@ -1,10 +1,11 @@
 package com.example.megacitycab.service;
 
 
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import com.example.megacitycab.dao.UserDAO;
-import com.example.megacitycab.factory.UserFactory;
+import com.example.megacitycab.service.factory.UserFactory;
 import com.example.megacitycab.model.User;
 import org.junit.Test;
 
