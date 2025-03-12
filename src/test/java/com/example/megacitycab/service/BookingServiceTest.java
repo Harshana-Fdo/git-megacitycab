@@ -22,7 +22,7 @@ class BookingServiceTest {
         BookingService bookingService = new BookingService();
 
 
-        int result = bookingService.createBooking(1, 2, "Colombo", "Kandy", 115.0);
+        int result = bookingService.createBooking(1, 2, "Colombo2", "Kandy2", 115.0);
 
 
         assertTrue(result > 0);
@@ -32,7 +32,7 @@ class BookingServiceTest {
         BookingService bookingService = new BookingService();
 
 
-        boolean result = bookingService.updateBookingStatus(9, "CONFIRMED");
+        boolean result = bookingService.updateBookingStatus(10, "CONFIRMED");
 
         assertTrue(result, "Expected booking status update to succeed, but it failed.");
     }

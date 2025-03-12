@@ -30,8 +30,8 @@ public class AuthServiceTest {
     @Test
     public void testValidCustomerRegistration() {
         AuthService authService = new AuthService();
-        User customer = UserFactory.createUser(0, "test_customer", "password123",
-                "testcustomer@example.com", "123456789", "Test Customer", "CUSTOMER", "ACTIVE");
+        User customer = UserFactory.createUser(0, "test_customer2", "password123",
+                "testcustomer2@example.com", "123456789", "Test Customer", "CUSTOMER", "ACTIVE");
 
         boolean result = authService.registerUser(customer);
         assertTrue(result, "Expected customer registration to succeed");
@@ -41,8 +41,8 @@ public class AuthServiceTest {
     @Test
     public void testValidAdminRegistration() {
         AuthService authService = new AuthService();
-        User admin = UserFactory.createUser(0, "test_admin", "adminpass",
-                "testadmin@example.com", "987654321", "Test Admin", "ADMIN", "ACTIVE");
+        User admin = UserFactory.createUser(0, "test_admin2", "adminpass",
+                "testadmin2@example.com", "987654321", "Test Admin", "ADMIN", "ACTIVE");
 
         boolean result = authService.registerUser(admin);
         assertTrue(result, "Expected admin registration to succeed");
@@ -52,8 +52,9 @@ public class AuthServiceTest {
     @Test
     public void testDuplicateUsernameRegistration() {
         AuthService authService = new AuthService();
-        User duplicateUser = UserFactory.createUser(0, "existing_user", "password123",
-                "existing@example.com", "123456789", "Existing User", "CUSTOMER", "ACTIVE");
+        User duplicateUser = UserFactory.createUser(0, "existing_user2", "password123",
+                "existing2@example.com", "123456789", "Existing User", "CUSTOMER", "ACTIVE");
+
 
         boolean firstAttempt = authService.registerUser(duplicateUser);
         boolean secondAttempt = authService.registerUser(duplicateUser);

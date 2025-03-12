@@ -16,9 +16,9 @@ public class UserServiceTest {
     void updateUserDetails() {
         // Assuming user ID 19 exists in the database
         int userId = 19;
-        String username = "UpdatedUser";
-        String email = "updateduser@gmail.com";
-        String phone = "0771234567";
+        String username = "UpdatedUser1";
+        String email = "updateduser1@gmail.com";
+        String phone = "0771234561";
 
         boolean result = userService.updateUserDetails(userId, username, email, phone);
 

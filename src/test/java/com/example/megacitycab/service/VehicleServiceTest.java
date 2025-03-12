@@ -42,7 +42,7 @@ class VehicleServiceTest {
         VehicleService vehicleService = new VehicleService();
 
         // Create a new vehicle object
-        Vehicle newVehicle = new Vehicle(1, "John1", "ABC-1234", "Toyota Prius X", "AVAILABLE");
+        Vehicle newVehicle = new Vehicle(1, "John3", "ABC-2223", "Toyota Prius BXX", "AVAILABLE");
 
         // Attempt to add vehicle
         boolean result = vehicleService.addVehicle(newVehicle);
@@ -56,7 +56,7 @@ class VehicleServiceTest {
         VehicleService vehicleService = new VehicleService();
 
         // Assume we update vehicle with ID 1
-        boolean result = vehicleService.updateVehicle(9, "John Deo", "ABC-123", "AVAILABLE");
+        boolean result = vehicleService.updateVehicle(9, "John Deo12", "ABCD-123", "AVAILABLE");
 
         // Assert: Update should be successful
         assertTrue(result);
@@ -67,7 +67,7 @@ class VehicleServiceTest {
         VehicleService vehicleService = new VehicleService();
 
         // Assume we delete vehicle with ID 1
-        boolean result = vehicleService.deleteVehicle(2);
+        boolean result = vehicleService.deleteVehicle(10);
 
         // Assert: Deletion should be successful
         assertTrue(result);
