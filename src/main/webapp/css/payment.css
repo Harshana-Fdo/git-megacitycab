@@ -1,0 +1,89 @@
+/* Global Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4B0082, #0000FF);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Payment Container */
+.payment-container {
+    background: white;
+    color: black;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Payment Heading */
+h2 {
+    font-size: 26px;
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Payment Details */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Select Payment Method */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #007BFF;
+    background: white;
+    font-size: 16px;
+}
+
+/* Confirm Payment Button */
+button {
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Back to Booking History Button */
+.back-button {
+    background: #ff6600;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.back-button:hover {
+    background: #cc5500;
+}

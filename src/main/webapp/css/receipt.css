@@ -1,0 +1,71 @@
+/* Global Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4B0082, #0000FF);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Receipt Container */
+.receipt-container {
+    background: white;
+    color: black;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* Receipt Heading */
+h2 {
+    font-size: 28px;
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Payment Details */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Highlight Payment Status */
+.payment-status {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.paid {
+    color: green;
+}
+
+.failed {
+    color: red;
+}
+
+/* Back to Dashboard Button */
+.back-button {
+    background: #ff6600;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.back-button:hover {
+    background: #cc5500;
+}
