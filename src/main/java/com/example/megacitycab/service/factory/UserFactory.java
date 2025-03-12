@@ -1,4 +1,4 @@
-package com.example.megacitycab.factory;
+package com.example.megacitycab.service.factory;
 
 import com.example.megacitycab.model.User;
 

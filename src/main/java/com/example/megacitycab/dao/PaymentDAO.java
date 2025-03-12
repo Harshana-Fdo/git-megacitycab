@@ -2,9 +2,9 @@ package com.example.megacitycab.dao;
 
 import com.example.megacitycab.model.Booking;
 import com.example.megacitycab.model.Payment;
-import com.example.megacitycab.observer.EmailNotification;
-import com.example.megacitycab.observer.SMSNotification;
-import com.example.megacitycab.observer.Subject;
+import com.example.megacitycab.service.observer.EmailNotification;
+import com.example.megacitycab.service.observer.SMSNotification;
+import com.example.megacitycab.service.observer.Subject;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
