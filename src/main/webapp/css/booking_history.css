@@ -1,0 +1,95 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4B0082, #0000FF);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Booking History Title */
+h2 {
+    font-size: 24px;
+    color: #FFF;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Headers */
+th {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Table Data */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Pending & Paid Status Styling */
+td .pending {
+    color: red;
+    font-weight: bold;
+}
+
+td .paid {
+    color: green;
+    font-weight: bold;
+}
+
+/* Pay Now Button */
+button.pay-now {
+    background: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.pay-now:hover {
+    background: #218838;
+}
+
+/* Disabled Paid Button */
+button.paid {
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Back to Dashboard Button */
+button.dashboard {
+    background: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button.dashboard:hover {
+    background: #cc5500;
+}

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 🔹 Page Title */
+h2, h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* 🔹 Buttons */
+button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* ✅ Update Button */
+button[onclick^="openUpdateForm"] {
+    background-color: #28a745;
+    color: white;
+}
+
+/* ❌ Delete Button */
+button[type="submit"][onclick^="return confirm"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* 🔹 Forms */
+form {
+    margin: 10px 0;
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 🔹 Add Vehicle Section */
+form[action="AdminVehicleServlet"] {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+    color: black;
+}
+
+button[type="submit"] {
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+}
